@@ -21,3 +21,5 @@ cd WhatsApp-Audio-changer
 <p align="left"> 
     <img src="./Assets/Screenshot_3.png" alt="imagem de WhatsApp"/>
 </p>
+
+**Now, you just have to drop the directory that you cloned in the extentions**
