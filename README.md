@@ -13,3 +13,11 @@ git clone https://github.com/muNeves3/WhatsApp-Audio-changer
 ```sh
 cd WhatsApp-Audio-changer
 ```
+
+# Go to chrome://extensions/
+
+# Make sure you have the "Developer mode" on
+
+<p align="left"> 
+    <img src="./Assets/Screenshot_3.png" alt="imagem de WhatsApp"/>
+</p>
