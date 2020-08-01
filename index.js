@@ -5,7 +5,7 @@ const interval = setInterval(() => {
     clearInterval(interval);
 
     var timesButton = document.createElement("input");
-    timesButton.type = "text";
+    timesButton.type = "number";
     const submitButton = document.createElement("input");
     submitButton.type = "submit";
     submitButton.value = "enviar";
@@ -15,6 +15,10 @@ const interval = setInterval(() => {
       var value = timesButton.value;
       const audios = document.querySelectorAll("audio");
       console.log(audios);
+      if (value >= 11) {
+        alert("coloque um número menor");
+        value -= 10;
+      }
       audios.forEach((audio) => {
         console.log(audio);
         audio.playbackRate = value;
