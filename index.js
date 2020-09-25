@@ -4,6 +4,7 @@ const interval = setInterval(() => {
     console.log(header);
     clearInterval(interval);
 
+  
     var timesButton = document.createElement("input");
     timesButton.type = "number";
     const submitButton = document.createElement("input");
@@ -13,17 +14,18 @@ const interval = setInterval(() => {
 
     submitButton.addEventListener("click", () => {
       var value = timesButton.value;
+      localStorage.setItem("audiovalue", value);
       const audios = document.querySelectorAll("audio");
-      console.log(audios);
       if (value >= 11) {
         alert("coloque um número menor");
         value -= 10;
       }
       audios.forEach((audio) => {
-        console.log(audio);
-        audio.playbackRate = value;
+        audio.playbackRate = localStorage.getItem("audiovalue")
+        
+        // audio.playbackRate = value;
         console.log(value);
-      });
+      });  
     });
     header.appendChild(timesButton);
     header.appendChild(submitButton);
